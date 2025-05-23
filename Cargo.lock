@@ -252,8 +252,9 @@ dependencies = [
 
 [[package]]
 name = "casper-types"
-version = "5.0.1"
-source = "git+https://github.com/casper-network/casper-node.git?branch=dev#1c3b8ad90bf0d83e73c73a6e6ddfc09f148b88b1"
+version = "5.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "42121c60e1d59079edf8e1141f2d860f1e6e6ecb8a660ef22b890358f695ea98"
 dependencies = [
  "base16",
  "base64 0.13.1",
@@ -627,7 +628,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "33d852cb9b869c2a9b3df2f71a3074817f01e1844f839a144f5fcef059a4eb5d"
 dependencies = [
  "libc",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -1745,7 +1746,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -2152,7 +2153,7 @@ dependencies = [
  "getrandom 0.3.1",
  "once_cell",
  "rustix",
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
