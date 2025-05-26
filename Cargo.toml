@@ -58,7 +58,7 @@ toml = "0.8.22"
 
 [dev-dependencies]
 tempfile = "3.8.1"
-casper-types = { version = "5.0.2", features = ["std", "json-schema", "testing"] }
+casper-types = { version = "6.0.0", features = ["std", "json-schema", "testing"] }
 
 [package.metadata.deb]
 revision = "0"

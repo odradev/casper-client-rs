@@ -226,7 +226,8 @@ dependencies = [
  "base16",
  "base64 0.22.1",
  "bytes",
- "casper-types",
+ "casper-types 5.0.2",
+ "casper-types 6.0.0",
  "clap",
  "clap_complete",
  "flate2",
@@ -255,6 +256,45 @@ name = "casper-types"
 version = "5.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "42121c60e1d59079edf8e1141f2d860f1e6e6ecb8a660ef22b890358f695ea98"
+dependencies = [
+ "base16",
+ "base64 0.13.1",
+ "bitflags 1.3.2",
+ "blake2",
+ "derive_more",
+ "derp",
+ "ed25519-dalek",
+ "getrandom 0.2.15",
+ "hex",
+ "hex_fmt",
+ "humantime",
+ "itertools 0.10.5",
+ "k256",
+ "libc",
+ "num",
+ "num-derive",
+ "num-integer",
+ "num-rational",
+ "num-traits",
+ "once_cell",
+ "pem",
+ "rand",
+ "schemars",
+ "serde",
+ "serde-map-to-array",
+ "serde_bytes",
+ "serde_json",
+ "thiserror",
+ "tracing",
+ "uint",
+ "untrusted 0.7.1",
+]
+
+[[package]]
+name = "casper-types"
+version = "6.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "22456303134e094fbd6cd62288cdadcd8a100525d98b12ede9747fb9352072bd"
 dependencies = [
  "base16",
  "base64 0.13.1",
