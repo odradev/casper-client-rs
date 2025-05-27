@@ -219,37 +219,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f61dac84819c6588b558454b194026eb1f09c293b9036ae9b159e74e73ab6cf9"
 
 [[package]]
-name = "casper-client"
-version = "3.0.1"
-dependencies = [
- "async-trait",
- "base16",
- "base64 0.22.1",
- "bytes",
- "casper-types",
- "clap",
- "clap_complete",
- "flate2",
- "hex-buffer-serde",
- "humantime",
- "itertools 0.12.1",
- "jsonrpc-lite",
- "num-traits",
- "once_cell",
- "rand",
- "reqwest",
- "schemars",
- "serde",
- "serde-map-to-array",
- "serde_json",
- "tar",
- "tempfile",
- "thiserror",
- "tokio",
- "uint",
-]
-
-[[package]]
 name = "casper-types"
 version = "5.0.0"
 source = "git+https://github.com/casper-network/casper-node.git?branch=dev#1e2c84ad674f3862fe71f7f6c8f6d429567f777a"
@@ -1392,6 +1361,37 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "62948e14d923ea95ea2c7c86c71013138b66525b86bdc08d2dcc262bdb497b87"
 dependencies = [
  "memchr",
+]
+
+[[package]]
+name = "odra-casper-client"
+version = "2.0.0"
+dependencies = [
+ "async-trait",
+ "base16",
+ "base64 0.22.1",
+ "bytes",
+ "casper-types",
+ "clap",
+ "clap_complete",
+ "flate2",
+ "hex-buffer-serde",
+ "humantime",
+ "itertools 0.12.1",
+ "jsonrpc-lite",
+ "num-traits",
+ "once_cell",
+ "rand",
+ "reqwest",
+ "schemars",
+ "serde",
+ "serde-map-to-array",
+ "serde_json",
+ "tar",
+ "tempfile",
+ "thiserror",
+ "tokio",
+ "uint",
 ]
 
 [[package]]
