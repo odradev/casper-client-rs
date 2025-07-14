@@ -371,7 +371,11 @@ impl<'a> TransactionV1Builder<'a> {
         entry_point: E,
         runtime: TransactionRuntimeParams,
     ) -> Self {
-        let id = TransactionInvocationTarget::new_package_with_key(hash, version);
+        let id = if let Some(version) = version {
+            TransactionInvocationTarget::new_package_with_major(hash, Some(version.entity_version()), Some(version.protocol_version_major()))
+        } else {
+            TransactionInvocationTarget::new_package_with_major(hash, None, None)
+        };
         Self::new_targeting_stored(id, entry_point, runtime)
     }
 
@@ -396,7 +400,15 @@ impl<'a> TransactionV1Builder<'a> {
         entry_point: E,
         runtime: TransactionRuntimeParams,
     ) -> Self {
-        let id = TransactionInvocationTarget::new_package_alias_with_key(alias.into(), version);
+        let id = if let Some(version) = version {
+            TransactionInvocationTarget::new_package_alias_with_major(
+                alias.into(),
+                Some(version.entity_version()),
+                Some(version.protocol_version_major()),
+            )
+        } else {
+            TransactionInvocationTarget::new_package_alias_with_major(alias.into(), None, None)
+        };
         Self::new_targeting_stored(id, entry_point, runtime)
     }
 
